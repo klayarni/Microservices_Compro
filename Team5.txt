@@ -1,0 +1,37 @@
+***Student Microservice***
+----------------------------------
+--Student Controller--
+------------------------
+--GetAllStudents--work by coachId 1
+http://localhost:8060/students/all/1
+
+--RegisterToDepartment--
+http://localhost:8060/students/register/dept/123/2
+
+--RegisterToCourse-- Student-course table
+http://localhost:8060/students/register/456/2
+
+--GetCourseListForStudentID--
+http://localhost:8060/students/courses/123
+-------------------------------------------------------------------------------------------------------------------------------
+--AssignStudentToCourse--
+http://localhost:8060/students/assign/1/1
+------------------------------------------------------------------------------------------------------------------------------
+--GetStudentByID--
+http://localhost:8060/students/1
+---------------------------------------------------------------------------------------------------------------------------------
+--Faculty Controller--
+------------------------
+--RegisterToDepartment--
+http://localhost:8060/students/register/dept/123/2
+
+--GetAllCourcesByFaculty
+http://localhost:8060/faculties/courses/1
+
+--------------------------------------------------------------------------------------------------------------------------------
+***Job Microservice integrated with Student Microservice***
+--assignStudentByCoach--
+http://localhost:8090/coach/assign/1/2
+
+--getAllStudentsByCoachId--
+http://localhost:8090/coach/students/1

@@ -1,0 +1,35 @@
+INSERT INTO student (id, gpa, city, state, street, zip, enrollment_date, graduation_date, name, stu_id, job_id, sdepartment_id) VALUES (1, 200, 'city1', 'state1', 'st1', 345, '2020-09-22', 2020-09-22, Braian, 123, 1, 1);
+INSERT INTO student (id, gpa, city, state, street, zip, enrollment_date, graduation_date, name, stu_id, job_id, sdepartment_id) VALUES (2, 300, city2, state2, st2, 678, 2020-09-22, 2020-09-22, Aya, 456, 2, 2);
+-----------
+INSERT INTO student (id, gpa, city, state, street, zip, enrollment_date, graduation_date, name, stu_id, job_id, sdepartment_id, coach_id) VALUES (2, 4, ct, st, st, 455, 2020-09-22, 2020-09-22, Anas, 456, 1, 1, 1);
+
+
+INSERT INTO department (id, department_name) VALUES (1, MPP);
+INSERT INTO department (id, department_name) VALUES (2, FPP);
+
+
+INSERT INTO job (id, salary, start_date, title) VALUES (1, 2000, 2020-09-22, android);
+INSERT INTO job (id, salary, start_date, title) VALUES (2, 3000, 2020-09-22, java);
+
+
+INSERT INTO coach (id, hiring_date, emp_name, officeid, responsibilty_desc) VALUES (1, 2020-09-22, Kay, 1, dessssc);
+INSERT INTO coach (id, hiring_date, emp_name, officeid, responsibilty_desc) VALUES (2, 2020-09-22, sara, 2, descc);
+
+
+INSERT INTO course (id, building, end_date, room_number, start_date, title, cdepartment_id, faculty_id) VALUES (1, 1, 2020-09-23, 1, 2020-09-23, EA, 1, 1);
+
+INSERT INTO course (id, building, end_date, room_number, start_date, title, cdepartment_id, faculty_id) VALUES (2, 2, 2020-09-23, 2, 2020-09-23, ASD, 2, 2);
+
+INSERT INTO faculty (id, hiring_date, emp_name, officeid, responsibilty_desc, city, state, street, zip, room_number, fdepartment_id) VALUES (1, 2020-09-23, Kay, 2, dessss, far, ia, st, 2022, 4, 1);
+
+
+INSERT INTO faculty (id, hiring_date, emp_name, officeid, responsibilty_desc, city, state, street, zip, room_number, fdepartment_id) VALUES (2, 2020-09-23, Kay2, 1, deeeeeeesc, still, ok, st2, 405, 2, 2);
+
+--------------------------------------------------------------------
+
+assign student to coach
+http://localhost:8090/coach/assign/123/1
+
+
+allow
+http://localhost:8090/coach/allow/123/2
